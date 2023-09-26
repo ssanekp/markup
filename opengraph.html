@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Использование микроразметки</title>
+</head>
+<body>
+   
+    
+    <div class="header"> 
+
+
+        <div class="logo">
+                <b>ЭТО ЛОГОТИП</b>
+        </div>
+
+
+        <div class="botton_head"> 
+            <div class="pure-menu pure-menu-horizontal">
+                <a href="home.html" class="pure-menu-heading pure-menu-link">Главная</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                        <a href="contacts.html" class="pure-menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+   
+
+    <div class="bodys" id="1">
+
+
+        <div class="head_body">
+            <h1 class="text_head_body">Микроразметка Open Graph</h1>
+            <h2 class="date_head_body">26 сентября 2023</h2>    
+        </div> 
+
+
+        <div class="blog"> 
+
+
+            <div class="text_body">
+                <div id="1" class="text blue_split"><b>Open Graph</b> – стандарт микроразметки, который позволяет формировать превью сайта при публикации в социальных сетях.</div>
+                <div class="text">Стандарт Open Graph был разработан Facebook. Сейчас Open Graph используют Facebook, Яндекс, Вконтакте, Google+, Twitter, Pinterest и др. В Яндексе микроформат используется для передачи данных в Яндекс.Видео.</div>
+                <div id="2" class="text"><b>Принцип работы микроразметки</b><br>Сайт самостоятельно подгружает картинку (или картинки), описание и заголовок с ссылки, которую вы вставили в социальную сеть. Это позволяет кратко ознакомится с материалом, который предоставлен по ссылке. Как итог, вам не нужно придумывать описание для ссылки и добавлять изображения к публикации.
+                    <img src="resources/opengraph_result.webp" alt="Результат внедрения микроразметки Open Graph">
+                    <div class="alt">Результат внедрения микроразметки Open Graph.</div><br>
+                    Также будет выглядеть публикация при нажатии на кнопки «поделиться в соц. сетях».
+
+                </div>
+                <div id="3" class="text"><b>Основные теги Open Graph</b><br>
+                    <table class="pure-table">
+                        <tbody>
+                            <tr class="pure-table-odd">
+                                <td><b>og:title</b></td>
+                                <td>заголовок вашей ссылки в публикации</td>
+                            </tr>
+                            <tr>
+                                <td><b>og:description</b></td>
+                                <td>описание вашей ссылки в публикации</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td><b>og:type</b></td>
+                                <td>тип объекта (видео, статья, обычная страница, товар/услуга и др.)</td>
+                            </tr>
+                            <tr>
+                                <td><b>og:image</b></td>
+                                <td>URL изображения или заставки для видео, которое загружается в публикацию.</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td><b>og:url</b></td>
+                                <td>канонический адрес страницы, обычно является копией URL где размещен тег.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    Это не весь список тегов. Полный список тегов можно <a class="text_in_body" href="https://ogp.me">посмотреть на официальном сайте Open Graph.</a>
+                </div>
+                <div id="4" class="text"><b>Пример микроразметки Open Graph для статьи блога</b><br>Пример краткой микроразметки Open Graph: <br>
+                    <div class="border font_l">
+                        &lt;<b>meta</b> property= <em class="orange">"og:title"</em> content=<em class="orange">"Какой текст необходим для продвижения / Блог Цифрового Элемента"</em> /&gt; <br>
+                        &lt;<b>meta</b> property=<em class="orange">"og:description"</em> content=<em class="orange">"Какой текстовый контент должен быть на сайте, чтобы привлечь целевую аудиторию и увеличить трафик сайта? Самые популярные вопросы при составлении ТЗ копирайтеру."</em> /&gt; <br>
+                        &lt;<b>meta</b> property=<em class="orange">"og:type"</em> content=<em class="orange">"article"</em> /&gt; <br>
+                        &lt;<b>meta</b> property=<em class="orange">"og:image"</em> content=<em class="orange">"https://d-element.ru/upload/iblock/f48/oblozhka.png"</em> /&gt; <br>
+                        &lt;<b>meta</b> property=<em class="orange">"og:image:alt"</em> content=<em class="orange">"Текст для продвижения"</em> /&gt; <br>
+                        &lt;<b>meta</b> property=<em class="orange">"og:url"</em> content=<em class="orange">"https://d-element.ru/about/blog/kakoy-tekst-neobkhodim-dlya-prodvizheniya/"</em> /&gt; <br>
+                    </div>
+                </div>
+                <div id="5" class="text"><b>Пример микроразметки Open Graph для товаров или услуг</b><br>Пример краткой микроразметки Open Graph: <br>
+                    <div class="border font_l">
+                        &lt;<b>meta</b> property= <em class="orange">"og:title"</em> content=<em class="orange">"SEO продвижение сайтов, оптимизация и раскрутка"</em> /&gt; <br>
+                        &lt;<b>meta</b> property=<em class="orange">"og:description"</em> content=<em class="orange">"В интернет-агентстве можно заказать SEO продвижение сайта в поисковых системах Яндекс и Google. Продвижение по трафику и позициям. Индивидуальная SEO раскрутка и веб-аналитика."</em> /&gt; <br>
+                        &lt;<b>meta</b> property=<em class="orange">"og:type"</em> content=<em class="orange">"product"</em> /&gt; <br>
+                        &lt;<b>meta</b> property=<em class="orange">"og:image"</em> content=<em class="orange">"https://d-element.ru/local/templates/delement/frontend/assets/img/bg-finish.jpg"</em> /&gt; <br>
+                        &lt;<b>meta</b> property=<em class="orange">"og:image:alt"</em> content=<em class="orange">"SEO"</em> /&gt; <br>
+                        &lt;<b>meta</b> property=<em class="orange">"og:url"</em> content=<em class="orange">"https://d-element.ru/services/seo/"</em> /&gt; <br>
+                    </div>
+                </div>
+                <div id="6" class="text"><b>Проверка микроразметки Open Graph</b><br>Проверить микроразметку можно вручную или воспользоваться автоматизированными сервисами: <br> <br>
+                    <b>1.</b> Проверить корректность установки микроразметки Open Graph можно через валидатор Яндекса. Валидатор Яндекса также позволяет проанализировать корректность установки микроразметки schema.org. <br> <br>
+                    <b>2.</b> Проверить микроразметку Open Graph также можно с помощью инструмента Facebook. Позволяет увидеть, как будет выглядеть публикация.
+                </div>
+                <div class="text alt2">*Instagram и Facebook принадлежат компании Meta, чья деятельность запрещена на территории России с 21 марта 2022 года.</div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            
+
+            <aside class="navigation_body">
+                <div class="navigation"><b>Навигация</b></div> <br> 
+                <div class="nav_text navigation"><a href="#1" class="nav_none">Что такое Open Graph</a></div> <br>
+                <div class="nav_text navigation"><a href="#2" class="nav_none">Принцип работы микроразметки</a></div> <br>
+                <div class="nav_text navigation"><a href="#3" class="nav_none">Основные теги Open Graph</a></div> <br>
+                <div class="nav_text navigation"><a href="#4" class="nav_none">Пример микроразметки Open Graph для статьи блога</a></div> <br>
+                <div class="nav_text navigation"><a href="#5" class="nav_none">Пример микроразметки Open Graph для товаров или услуг</a></div> <br>
+                <div class="nav_text navigation"><a href="#6" class="nav_none">Проверка микроразметки Open Graph</a></div> <br>
+            </aside>  
+
+
+        </div>
+
+
+        <div class="maybe"><h1>Может быть интересно:</h1></div>
+        <div class="intresting_body">
+            <div class="i_b_img marning_left"><a class="aa" href="index.html">
+                <img class="img_intr" src="resources/microrazm.webp" width="100%" alt=""> 
+                <div class="date_intresting">19 сентября 2023</div>
+                <div class="text_intersting">Что такое микроразметка и зачем она нужна?</div>
+                <br>
+            </a></div>
+            <div class="i_b_img marning_center"><a class="aa" href="schema.html">
+                <img class="img_intr" src="resources/schema.webp" width="100%" alt=""> 
+                <div class="date_intresting">25 сентября 2023</div>
+                <div class="text_intersting">Всё о микроразметке Shema.org.</div>
+                <br>
+            </a></div>
+            <div class="i_b_img marning_right"><a class="aa" href="never.html">
+                <img class="img_intr" src="resources/test.webp" width="100%" alt=""> 
+                <div class="date_intresting">__.__.____</div>
+                <div class="text_intersting">Будет позже</div>
+                <br>
+            </a></div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="div_up">
+            <button class="pure-button"><a href="#" class="up">Вверх</a></button>
+        </div>
+
+    </div>
+
+
+    <footer class="basement">
+        <div class="marning_left marning_b"><a class="a ahover" href="license.html">Лицензионное соглашение</a></div>
+        <div class="marning_center marning_b"><a class="a ahover" href="license.html">Политика конфиденциальности</a></div>
+        <div class="marning_right marning_b">© 2023 Александр Думенко</div>
+    </footer>
+
+
+</body>
+</html>

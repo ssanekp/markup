@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Использование микроразметки</title>
+</head>
+<body>
+   
+    
+    <div class="header"> 
+        <div class="botton_blue">
+            <style>
+                .button-secondary {
+                    color: white;
+                    border-radius: 4px;
+                    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+                }
+                .button-secondary2 {
+                    color: white;
+                    border-radius: 4px;
+                    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+                }
+                .button-secondary {
+                    background: rgb(66, 184, 221);
+                }
+                .button-secondary2 {
+                    background: rgb(126, 126, 126);
+                }
+            </style>
+            <button onclick = "document.getElementById('png').style.display='none'; document.getElementById('mp4').style.display='block';" class="button-secondary pure-button">НАКОРМИТЬ БОБИКА</button>
+        </div>
+
+        <div class="logo">
+                <b>ЭТО ЛОГОТИП</b>
+        </div>
+
+
+        <div class="botton_head"> 
+            <div class="pure-menu pure-menu-horizontal">
+                <a href="home.html" class="pure-menu-heading pure-menu-link">Главная</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                    <li class="pure-menu-item">
+                        <a href="contacts.html" class="pure-menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+   
+
+    <video id="mp4" class="bobik" style="display: none" src="resources/bobik.MP4"></video>
+    <img id="png" class="bobik" src="resources/bobik.webp" alt="">
+    <h1 class="bobik">Привет, я Бобик!</h1>
+
+
+    <div class="bodys" id="1">
+
+
+        <div class="head_body">
+            <h1 class="text_head_body">По русски же сказано, что будет позже!</h1>
+            <h2 class="date_head_body">__.never.____</h2>    
+        </div> 
+
+
+        <div class="blog"> 
+
+        </div>
+
+
+        <div class="maybe"><h1>Может быть интересно:</h1></div>
+        <div class="intresting_body">
+            <div class="i_b_img marning_left"><a class="aa" href="index.html">
+                <img class="img_intr" src="resources/microrazm.webp" width="100%" alt=""> 
+                <div class="date_intresting">19 сентября 2023</div>
+                <div class="text_intersting">Что такое микроразметка и зачем она нужна?</div>
+                <br>
+            </a></div>
+            <div class="i_b_img marning_center"><a class="aa" href="opengraph.html">
+                <img class="img_intr" src="resources/opengraph.webp" width="100%" alt=""> 
+                <div class="date_intresting">26 сентября 2023</div>
+                <div class="text_intersting">Всё о микроразметке Open Graph.</div>
+                <br>
+            </a></div>
+            <div class="i_b_img marning_right"><a class="aa" href="schema.html">
+                <img class="img_intr" src="resources/schema.webp" width="100%" alt=""> 
+                <div class="date_intresting">25 сентября 2023</div>
+                <div class="text_intersting">Всё о микроразметке Shema.org.</div>
+                <br>
+            </a></div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="div_up">
+            <button class="pure-button"><a href="#" class="up">Вверх</a></button>
+        </div>
+
+    </div>
+
+
+    <footer class="basement">
+        <div class="marning_left marning_b"><a class="a ahover" href="license.html">Лицензионное соглашение</a></div>
+        <div class="marning_center marning_b"><a class="a ahover" href="license.html">Политика конфиденциальности</a></div>
+        <div class="marning_right marning_b">© 2023 Александр Думенко</div>
+    </footer>
+
+
+</body>
+</html>
